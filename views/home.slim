@@ -1,0 +1,55 @@
+p Esta página web contiene un sencillo ejemplo de un analizador sintáctico recursivo y predictivo.
+/img src="/images/st.gif" alt="Syntax Tree"
+#header.header
+  p
+    | Puede cargar cualquier ejemplo para intentar parsear la entrada y obtener el árbol de análisis sintáctico.
+  div
+    .loadfile
+      pre
+        | Lista de ficheros
+      button#example1[type="button" onclick="dump('/examples/example1.txt');"]
+        | Ejemplo 1
+      button#example2[type="button" onclick="dump('/examples/example2.txt');"]
+        | Ejemplo 2
+      button#example3[type="button" onclick="dump('/examples/example3.txt');"]
+        | Ejemplo 3
+      button#example4[type="button" onclick="dump('/examples/example4.txt');"]
+        | Ejemplo 4
+      button#exampleerr[type="button" onclick="dump('/examples/example_err.txt');"]
+        | Ejemplo erróneo
+      input#files type="file"
+  div
+    .textarea_panel
+     textarea#original[autofocus cols="80" rows="5" name="Code"]
+
+    javascript:
+        var editor = CodeMirror.fromTextArea(document.getElementById("original"), {
+          lineNumbers: true,
+          viewportMargin: Infinity,
+          mode: "text/x-pascal" // Usamos pascal, que se parece bastante.
+        });
+        
+        // Véase http://stackoverflow.com/questions/8378678/how-can-i-set-the-value-of-a-codemirror-editor-by-javascript
+        function dump(fileName) {
+          $.get(fileName, function (data) {
+            //$("#original").val(data);
+            editor.setValue(data);
+           });
+        };
+
+        document.getElementById('files').addEventListener('change', CopyMe, false);
+
+        function CopyMe(evt) {
+          var file = evt.target.files[0];
+            if (file) {
+              var reader = new FileReader();
+              reader.onload = function(e) { 
+                //original.innerHTML = e.target.result;
+              editor.setValue(e.target.result);
+              }
+              var c = reader.readAsText(file);
+            }
+            else { alert("Failed to load file"); }
+        }
+input#PARSE.mylink[value="Parsear" type="button"]
+pre#OUTPUT &lt;Sin parsear&gt;

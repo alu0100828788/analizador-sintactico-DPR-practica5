@@ -1,0 +1,145 @@
+$red: #903;
+$black: #444;
+$white: #fff;
+$blue: #002EB8;
+$red_clear: #d96c74;
+$red_dark: #d22a36;
+$main-font: Helvetica, Arial, sans-serif;
+$main-font-size: 115%;
+$menu-width: 1100px;
+$menu-files-width: 1100px;
+
+
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  background: url(/images/fondo.jpg) 0 0 repeat;
+}
+
+h1 {
+  color: $blue;
+  font: 42px/1 $main-font;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 40px;
+  line-height: 80px;
+  background: transparent url(/images/logo.png) 0 0 no-repeat;
+  background-size: 10% 80%;
+  padding-left: 120px;
+}
+
+@mixin tabs ($background: blue, $color: yellow) {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: $background;
+    overflow: hidden;
+	
+	width: $menu-width;
+	display: block;
+	border-radius: 15px;
+	
+	li {
+      float: left;
+	  
+	  a {
+        text-decoration: none;
+        display: block;
+        padding: 8px;
+        background: $background;
+        color: $color;
+		
+        &:hover {
+          background: darken($background, 20%);
+        }
+      }
+    }
+  }
+}
+
+nav {
+  @include tabs ($background: $red_clear, $color: $white);
+  font-weight: bold;
+  
+  a.current {
+    background: darken($red_clear, 15%);
+  }
+}
+
+p {
+  font: 13px/1.4 $main-font;
+}
+
+label {
+  display: block;
+}
+
+.flash {
+  width: 600px;
+  padding: 5px;
+  font-weight: bold;
+  margin: 20px;
+  background: lighten($red, 60%);
+  color: $red;
+  border: 1px solid $red;
+}
+
+#like {
+  p {
+    font-weight: bold;
+    color: $red;
+  }
+  input {
+    background: $red url(/images/like.png) 0 2px no-repeat;
+    border: darken($red, 10%) 1px solid;
+    height: 28px;
+    padding-left: 24px;
+  }
+}
+
+.loadfile {
+  background-color: $black;
+  border-radius: 5px;
+  border: 0px solid #DDD;
+  line-height: 3px;
+  
+  width: $menu-files-width;
+  height: 60px;
+  padding: 10px;
+  
+  color: $white;
+  font-weight: bold;
+
+  button, input {
+    color: $black;
+    float: left;
+    list-style: none;
+
+    display: inline;
+    text-align: center;
+    font-weight: bolder;
+  }
+   
+  button:hover, input:hover {
+    cursor:pointer;
+  }
+}
+
+.textarea_panel {
+  width: $menu-files-width + 18;
+  padding: 15px;
+}
+   
+.error {
+  color: $white;
+  background-color: $red;
+}
+
+.centered {
+  display: table;
+  margin: 0 auto;
+}
+//--------------------------------------------------------------
