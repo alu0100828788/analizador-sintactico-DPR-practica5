@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'slim'
 require 'sass'
-require 'v8'
+#require 'v8'
 require 'coffee-script'
 
 before do
