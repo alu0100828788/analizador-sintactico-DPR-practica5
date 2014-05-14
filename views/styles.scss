@@ -1,7 +1,7 @@
-$red: #903;
-$black: #444;
-$white: #fff;
-$blue: #002EB8;
+$red: #00ffff;
+$black: #800080;
+$white: #ff00ff;
+$blue: #800000;
 $red_clear: #d96c74;
 $red_dark: #d22a36;
 $main-font: Helvetica, Arial, sans-serif;
@@ -13,7 +13,11 @@ $menu-files-width: 1100px;
 body {
   font-family: $main-font;
   font-size: $main-font-size;
-  background: url(/images/fondo.jpg) 0 0 repeat;
+  //background: url(/images/fondo.jpg) 0 0 repeat;
+ background: url('/images/fondo.jpg') no-repeat;
+ background-size: cover;
+ background-position: center 0;
+ background-attachment: fixed; 
 }
 
 h1 {
