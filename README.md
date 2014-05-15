@@ -8,8 +8,8 @@ El objetivo de la práctica consiste en realizar un ***analizador sintáctico re
 ## 2. Acceso a la página web ##
 Se puede acceder a la página web de *Heroku* alojada en el siguiente enlace:
 
-- Despliegue en Heroku: [http://alu0100699494-pl-prct05.herokuapp.com](http://alu0100699494-pl-prct05.herokuapp.com)
-- Pruebas: [http://alu0100699494-pl-prct05.herokuapp.com/tests.html](http://alu0100699494-pl-prct05.herokuapp.com/tests.html)
+- Despliegue en Heroku: [http://practica5-analizador-sintactic.herokuapp.com/]
+
 
 ## 3. Dependencias ##
 Se ha hecho uso de la librerías siguientes:
