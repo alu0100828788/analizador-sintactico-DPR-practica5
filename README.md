@@ -1,4 +1,4 @@
-# Práctica 05 - Procesadores de Lenguajes#
+﻿# Práctica 05 - Procesadores de Lenguajes#
 ## 1. Objetivo de la práctica ##
 
 El objetivo de la práctica consiste en realizar un ***analizador sintáctico recursivo predictivo*** o *parser* para un el antiguo lenguaje ***PL/0***. Además, se desarrollará como una aplicación *Ruby-Sinatra*, por lo que el despliegue de la página web se hará en *heroku*, al igual que la práctica anterior.
@@ -24,12 +24,12 @@ Otras librerías pertenecen al lado del *servidor* (ruby). Además, no es necesa
 
 Se ha repartido el trabajo de la práctica, de una manera más o menos equitativa, tal que:
 
-### Laura ###
+### Robabeh ###
 - Inicializar el repositorio.
 - Completar el analizador sintáctico para que acepte *PL/0*.
 	- Código escrito directamente en *CoffeeScript*.
 
-### Daniel ###
+### Yousef ###
 - Editor *CodeMirror*.
 - Visualizado de gramática con *MathJax*.
 - Pruebas *Mocha/Chai*.
@@ -46,21 +46,21 @@ Este proyecto ha sido desarrollado, en conjunto, por:
 
 <!-- Tabla -->
 <table cellspacing="0">
-  <tr  style="background-color: #E3E3E3;">
+  <tr  style="background-color: #800000;">
 
     <td> <b>Nombre</b> </td>
     <td> <b>Código alu</b> </td>
 	<td> <b>Correo electrónico</b> </td>
   </tr>
   <tr style="background-color: #FFFFFF;">
-    <td> Daniel Herzog Cruz </td>
-    <td> alu0100699494 </td>
-	<td> <a href="mailto:alu0100699494@ull.edu.es">alu0100699494@ull.edu.es</a> </td>
+    <td> yousef Rajaei Tabrizi </td>
+    <td> alu 0100828788</td>
+	<td> <a href="https://www.facebook.com/brisa.spn2014?ref=tn_tnmn"</a> </td>
   </tr>
   <tr style="background-color: #FFFFFF;">
-    <td> Laura Fariña Rodríguez </td>
-    <td> alu0100693096 </td>
-	<td> <a href="mailto:alu0100693096@ull.edu.es">alu0100693096@ull.edu.es</a> </td>
+    <td> Robabeh Salehi </td>
+    <td> alu0100828771 </td>
+	<td> <a href="https://www.facebook.com/brisa.spn2014?ref=tn_tnmn"</a> </td>
   </tr>
 </table>
 <!-- Fin tabla -->
