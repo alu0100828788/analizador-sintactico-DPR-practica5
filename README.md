@@ -55,12 +55,12 @@ Este proyecto ha sido desarrollado, en conjunto, por:
   <tr style="background-color: #FFFFFF;">
     <td> yousef Rajaei Tabrizi </td>
     <td> alu 0100828788</td>
-	<td> <a href="https://www.facebook.com/brisa.spn2014?ref=tn_tnmn"</a> </td>
+	<td> <a href="mailto:alu0100828788@ull.edu.es">alu0100828788@ull.edu.es</a> </td>
   </tr>
   <tr style="background-color: #FFFFFF;">
     <td> Robabeh Salehi </td>
     <td> alu0100828771 </td>
-	<td> <a href="https://www.facebook.com/brisa.spn2014?ref=tn_tnmn"</a> </td>
+	<td> <a href="mailto:alu0100828771@ull.edu.es">alu0100828771@ull.edu.es</a> </td>
   </tr>
 </table>
 <!-- Fin tabla -->
